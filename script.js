@@ -17,9 +17,9 @@ function ajax_get(url, callback){
 }
 
 ajax_get(
-	"https://random-d.uk/api/random",
+	"https://random-duck.api.stdlib.com/api@1.2.1/quack/jpg/",
 	function(data) {
-		var html = '<img src="' + data[0]["url"] + '">';
+		var html = '<img src="' + data.url + '">';
 		document.getElementById("image").innerHTML = html;
 	}
 );
@@ -45,9 +45,9 @@ function getImage() {
 	}
 
 	ajax_get(
-		"https://random-d.uk/api/random",
+		"https://random-duck.api.stdlib.com/api@1.2.1/quack/jpg/",
 		function(data) {
-			var html = '<img src="' + data[0]["url"] + '">';
+			var html = '<img src="' + data.url + '">';
 			document.getElementById("image").innerHTML = html;
 		}
 	);
